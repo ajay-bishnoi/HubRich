@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https: //use.typekit.net/your-kit-id.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth !important;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./assets/fonts/HelveticaNeueLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@layer components {
+  .navitems {
+    @apply font-Helvetica font-normal text-base leading-5 text-white opacity-70 relative ease-linear duration-300 hover:gradientText  hover:bg-gradient-to-custom  after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-custom hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px] after:duration-300 after:ease-linear;
+  }
+  .nav-toggle-items {
+    @apply w-10 h-1 rounded-xl bg-gradient-to-custom block duration-300;
+  }
+  .social-icon {
+    @apply hover:scale-125 duration-500 ease-linear;
+  }
+  .gradientText {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.cross span:nth-child(1) {
+  transition: all 300ms linear;
+  transform: rotate(44deg) translateY(13px) translateX(2px);
+}
+.cross span:nth-child(2) {
+  transform: translateX(-100%);
+  transition: all 300ms linear;
+  opacity: 0;
+}
+.cross span:nth-child(3) {
+  transition: all 300ms linear;
+  transform: rotate(-45deg) translateY(-14px) translateX(4px);
+}
+.btn_webkit::after {
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+/*  */
+
+.slick-slide.slick-active.slick-current div > div {
+  background: #003e92 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-dots li button::before {
+  color: white !important;
+  opacity: 30%;
+  font-size: 10px !important;
+}
+.custom-dots li.slick-active button::before {
+  opacity: 1 !important;
+}
+.slick-next:before {
+  display: none !important;
+}
+.slick-prev:before {
+  display: none !important;
+}
+
+.slick-prev {
+  left: -41px !important;
+  bottom: 23px !important;
+}
+.slick-next {
+  right: unset;
+  left: 22px !important;
+  bottom: 23px !important;
+}
+.slick-prev,
+.slick-next {
+  top: unset !important;
+  display: flex !important;
 }
