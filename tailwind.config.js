@@ -39,6 +39,7 @@ module.exports = {
         "conversation-bg": `url(./assets/img/png/conversation.webp)`,
         "ring-bg": `url(./assets/img/png/ring-bg.webp)`,
         "over-ex": `url(./assets/img/png/over-with-ex.webp)`,
+        layer: `url(./assets/img/png/footer-layer.webp)`,
         request: `url(./assets/img/png/Request-bg.webp)`,
       },
     },

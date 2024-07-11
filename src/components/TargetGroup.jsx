@@ -1,10 +1,11 @@
 import React from "react";
 import { Heading2, Paragraphs } from "../assets/Icon";
+import Layer from "../assets/img/png/Layer.webp";
 
 const TargetGroup = () => {
   return (
-    <>
-      <div className=" lg:pt-12 py-8 lg:pb-[52px] bg-lightBlue2">
+    <div className="2xl:mx-auto 2xl:max-w-[1440px] relative z-0">
+      <div className=" lg:pt-12 py-8 lg:pb-[52px] bg-lightBlue2 2xl:mx-auto 2xl:max-w-[1440px]">
         <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] py-[1px]">
           <div className=" flex items-center justify-end  flex-col sm:flex-row lg:gap-[129px] sm:gap-10 gap-4">
             <Heading2
@@ -24,7 +25,7 @@ const TargetGroup = () => {
         </div>
       </div>
       {/*  */}
-      <div className=" bg-ring-bg bg-no-repeat bg-cover bg-center">
+      <div className=" bg-ring-bg bg-no-repeat bg-cover bg-center ">
         <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] relative xl:py-[108.5px] lg:py-[100px] md:py-20 sm:py-[70px] py-[60px]">
           <div className=" flex-col flex sm:gap-8 gap-4 max-lg:items-center">
             <div className=" flex lg:flex-col md:flex-row flex-col sm:gap-8 gap-4 lg:gap-0 ">
@@ -57,7 +58,13 @@ const TargetGroup = () => {
           </div>
         </div>
       </div>
-    </>
+      {/* ellips */}
+      <img
+        src={Layer}
+        alt="layer"
+        className=" absolute xl:-bottom-[37%] md:-bottom-[37%] -bottom-[25%] lg:-bottom-[35%] xl:left-0 md:left-0 lg:-left-[10%] pointer-events-none -z-50 w-[615px] "
+      />
+    </div>
   );
 };
 

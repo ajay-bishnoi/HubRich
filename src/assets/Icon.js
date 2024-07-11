@@ -41,7 +41,7 @@ export const Heading2 = ({
 };
 export const PhoneIcon = () => {
   return (
-    <span>
+    <a href="tel:+914234709">
       <svg
         width="34"
         height="34"
@@ -82,7 +82,7 @@ export const PhoneIcon = () => {
           </linearGradient>
         </defs>
       </svg>
-    </span>
+    </a>
   );
 };
 export const PrevArrow = ({ onClick, className, style }) => {
@@ -156,7 +156,7 @@ export const FbIcon = () => {
 };
 export const MailIcon = () => {
   return (
-    <a href="mail" target="_blank" className="social-icon">
+    <a href="mailto:MarcJoachimHubrich" className="social-icon">
       <svg
         width="30"
         height="31"
@@ -310,9 +310,9 @@ export const BlueCard = ({ class1, textContent, class2 }) => {
 };
 export const SixCard = ({ class1, textContent, class2, commonBtn }) => {
   return (
-    <div className="w-full h-fit sm:w-6/12 lg:w-4/12 max-sm:px-0 max-xl:px-3">
+    <div className="w-full h-fit sm:w-6/12 lg:w-4/12 max-sm:px-0 max-xl:px-3 2xl:flex 2xl:justify-center">
       <div
-        className={`lg:max-w-[380px] w-full flex xl:justify-center cursor-pointer justify-center sm:justify-start sm:text-start text-center  sm:min-h-[190px] lg:min-h-[230px] md:pt-12 sm:py-6 py-4 lg:pt-[63px]  duration-500 ease-linear group/item  ${class1}`}
+        className={`lg:max-w-[380px] 2xl:max-w-full w-full flex xl:justify-center cursor-pointer justify-center sm:justify-start sm:text-start text-center  sm:min-h-[190px] lg:min-h-[230px] md:pt-12 sm:py-6 py-4 lg:pt-[63px]  duration-500 ease-linear group/item  ${class1}`}
       >
         {textContent.map((text, index) =>
           text ? (

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import HeaderLayerBg from "../assets/img/png/Hero-image.webp";
+import HeaderEllips from "../assets/img/png/headerEllips.png";
 import {
   CommonBookBtn,
   MainHeading,
@@ -8,16 +9,17 @@ import {
   PhoneIcon,
 } from "../assets/Icon";
 import Commonbtn from "../common/Commonbtn";
+import ContentEllips from "../assets/img/png/text-ellips.webp";
 
 const Header = () => {
   return (
-    <div>
-      <header className="lg:bg-header-bg 2xl:mx-auto 2xl:max-w-[1440px] 2xl:bg-none h-full w-full bg-cover bg-no-repeat lg:bg-center bg-left relative">
+    <>
+      <header className="lg:bg-header-bg 2xl:mx-auto 2xl:max-w-[1440px] 2xl:bg-none h-full w-full bg-cover bg-no-repeat lg:bg-center bg-left z-30 relative">
         <Navbar />
         {/* hero-section */}
         <div className="lg:pt-40 md:pt-[120px] sm:pt-20 py-[60px] sm:pb-11 2xl:pb-20">
           {/* container */}
-          <div className="container  flex items-center justify-between lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px]">
+          <div className="container flex items-center justify-between lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] relative z-20">
             {/* row */}
             <div className="flex flex-row flex-wrap w-full lg:h-[522px] justify-between">
               {/* column */}
@@ -61,6 +63,12 @@ const Header = () => {
                 </div>
               </div>
             </div>
+            {/* ellips */}
+            <img
+              src={ContentEllips}
+              alt="ContentEllips"
+              className="absolute -z-30 pointer-events-none hidden md:block xl:-bottom-[45%] lg:-bottom-1/4 -bottom-[20%] 2xl:-bottom-1/2 left-0 xl:h-[330px] h-[220px]"
+            />
           </div>
         </div>
         <img
@@ -68,8 +76,14 @@ const Header = () => {
           alt="header-bg-image"
           className=" absolute 2xl:right-0 xl:-right-[10%] hidden 2xl:block top-0  xl:max-w-[791px] w-full h-full -z-10"
         />
+        {/* ellips */}
+        <img
+          src={HeaderEllips}
+          alt="header-ellips"
+          className=" absolute top-0 left-0 w-[300px] sm:w-[360px] md:w-[430px] 2xl:w-[412px] pointer-events-none"
+        />
       </header>
-    </div>
+    </>
   );
 };
 export default Header;

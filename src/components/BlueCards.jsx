@@ -20,45 +20,48 @@ const BlueCards = () => {
   }, []);
   return (
     <div>
-      <div className="bg-conversation-bg bg-cover bg-no-repeat bg-center ">
+      <div className="bg-conversation-bg bg-cover bg-no-repeat bg-center 2xl:mx-auto 2xl:max-w-[1440px]">
         {/* container */}
         <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px]">
-          {/* card-container-1 */}
-          <div className="flex flex-row w-full max-w-[1000px] justify-end">
-            {/* cards */}
-            {isMobile ? (
-              <CardSlider />
-            ) : (
-              BlueCardData1.map((data, index) => (
-                <BlueCard
-                  key={index}
-                  textContent={[data.title]}
-                  class2={data.style}
-                />
-              ))
-            )}
-          </div>
-          {/* card-container-2 */}
-          <div className="flex flex-row w-full max-w-[1000px] lg:mt-9  mt-7">
-            {/* cards */}
-            {isMobile ? (
-              <CardSlider2 />
-            ) : (
-              <div className="flex flex-row w-full max-w-[1000px] ">
-                {BlueCardData2.map((data, index) => (
+          <div className="2xl:flex justify-center flex-col items-center">
+            {/* card-container-1 */}
+            <div className="flex flex-row w-full max-w-[1000px] justify-end">
+              {/* cards */}
+              {isMobile ? (
+                <CardSlider />
+              ) : (
+                BlueCardData1.map((data, index) => (
                   <BlueCard
                     key={index}
                     textContent={[data.title]}
                     class2={data.style}
-                    class1="!pt-[45px]"
                   />
-                ))}
-              </div>
-            )}
+                ))
+              )}
+            </div>
+            {/* card-container-2 */}
+            <div className="flex flex-row w-full max-w-[1000px] lg:mt-9  mt-7">
+              {/* cards */}
+              {isMobile ? (
+                <CardSlider2 />
+              ) : (
+                <div className="flex flex-row w-full max-w-[1000px] ">
+                  {BlueCardData2.map((data, index) => (
+                    <BlueCard
+                      key={index}
+                      textContent={[data.title]}
+                      class2={data.style}
+                      class1="!pt-[45px]"
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-      <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] xl:mt-12 md:mt-10 mt-8">
+      {/* container */}
+      <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] xl:mt-12 md:mt-10 mt-8 relative z-30">
         <div className="flex flex-col items-center">
           <p className=" font-Poppins text-center font-normal text-base leading-6 text-black">
             You are not alone! Numerous women before you stood exactly at this

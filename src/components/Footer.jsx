@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className=" lg:py-[92px] md:py-20 sm:py-[70px] py-[60px] -mt-[1px] bg-darkBlue">
+    <div className=" lg:py-[92px] md:py-20 sm:py-[70px] py-[60px] -mt-[1px] bg-darkBlue 2xl:mx-auto 2xl:max-w-[1440px] bg-layer bg-cover bg-no-repeat">
       <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] ">
         <div className="relative w-full max-lg:flex sm:flex-row sm:justify-between items-center sm:gap-0 gap-5 flex-col">
           <div className=" flex justify-center lg:h-[160px] items-end">

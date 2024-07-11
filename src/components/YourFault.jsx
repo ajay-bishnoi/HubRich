@@ -1,12 +1,13 @@
 import React from "react";
 import { MainHeading, Paragraphs } from "../assets/Icon";
+import FaultEllips from "../assets/img/png/Ellips-2.webp";
 
 const YourFault = () => {
   return (
     //   section
-    <div className="xl:p-[151px_0px_34px_0px] lg:pt-[120px] md:pt-[80px] sm:p-[60px_0px_34px_0px] p-[12px_0px_34px_0px]">
+    <div className="xl:p-[151px_0px_34px_0px] lg:pt-[120px] md:pt-[80px] sm:p-[60px_0px_34px_0px] p-[12px_0px_34px_0px] 2xl:mx-auto 2xl:max-w-[1440px] relative z-10">
       {/* container */}
-      <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px]">
+      <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] relative z-10">
         {/* content */}
         <div className="max-w-[806px] w-full md::mb-12 sm:mb-8 mb-6 md:mb-10 lg:mb-12 xl:mb-[58px] mx-auto md:flex-row flex-col items-center flex justify-between md:gap-10 sm:gap-5 gap-4 lg:gap-[61px]">
           <div>
@@ -32,6 +33,12 @@ const YourFault = () => {
           at the moment:
         </h4>
       </div>
+      {/* ellips */}
+      <img
+        src={FaultEllips}
+        alt="Ellips"
+        className=" absolute pointer-events-none hidden md:block -z-20 right-0 lg:-bottom-[45px] bottom-2 lg:h-[370px] xl:h-[400px] h-[300px] "
+      />
     </div>
   );
 };
