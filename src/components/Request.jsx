@@ -41,7 +41,7 @@ const Request = () => {
         </div>
       </div>
       {/* blue-card-section */}
-      <div className="p-[112px_0px_186px_0px] bg-no-repeat bg-cover bg-center bg-request">
+      <div className="xl:p-[112px_0px_186px_0px] lg:p-[100px_0px_120px_0px] md:py-20 sm:py-[70px] py-[60px]  bg-no-repeat bg-cover bg-center bg-request">
         <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] ">
           {/* card -1 */}
           <div className=" flex-row justify-center w-full max-w-[1000px] mx-auto ">
@@ -68,7 +68,7 @@ const Request = () => {
           </div>
           <Commonbtn
             content="Book a non-binding initial consultation now"
-            class1="rounded-[63px] after:rounded-[63px] mx-auto mt-[58px]"
+            class1="rounded-[63px] after:rounded-[63px] mx-auto xl:mt-[58px] mt-12"
           />
         </div>
       </div>

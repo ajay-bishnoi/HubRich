@@ -1,8 +1,8 @@
 import React from "react";
 import LawyerPic from "../assets/img/png/Lawyer.webp";
 import { Heading2, Paragraphs, RightArrow } from "../assets/Icon";
-import Commonbtn2 from "../common/Commonbtn2";
 import Layer from "../assets/img/png/Lawyer-layer.webp";
+import Commonbtn from "../common/Commonbtn";
 const Lawyer = () => {
   return (
     <div className="xl:p-[239px_0px_202px_0px] lg:py-[120px] md:py-[80px] sm:py-[70px] py-[60px] z-30 relative">
@@ -30,18 +30,18 @@ const Lawyer = () => {
                 <span className="text-orange"> J</span>oachim
                 <span className="text-orange"> H</span>ubrich
               </h4>
-              <h5 className=" capitalize font-neue font-semibold text-xl leading-7  text-black lg:mb-3 mb-2">
+              <h5 className=" capitalize font-neue font-semibold text-xl leading-7 text-black lg:mb-3 mb-2">
                 About the mindset agency coach
               </h5>
               <Paragraphs
                 clsValue=" mb-[35px] opacity-70 "
                 Content1="Marc J. Hubrich is the founder of the mindset agency  specializing in consulting services."
               />
-              <Commonbtn2
-                svgIcon={<RightArrow />}
-                svgClass="ml-3 mt-[5px]"
-                Textbtn="Learn more about the agency"
-                class1="bg-gradient-to-custom flex items-center bg-clip-text text-transparent hover:text-white hover:after-[] hover:bg-gradient-to-custom"
+              <Commonbtn
+                content="Learn more about the agency"
+                class1="rounded-[59px] after:rounded-[59px] py-6 !px-8 max-w-[350px] !justify-between"
+                class2="hidden"
+                content2={<RightArrow />}
               />
             </div>
           </div>

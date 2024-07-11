@@ -5,15 +5,14 @@ import { BlueCardData1 } from "./Helper";
 
 const CardSlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 940,
-    slidesToShow: 3,
+    slidesToShow: 2,
     pauseOnHover: true,
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-
     cssEase: "linear",
     autoplay: true,
     autoplaySpeed: 1600,

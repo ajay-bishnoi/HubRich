@@ -1,4 +1,3 @@
-import { unstable_useViewTransitionState } from "react-router-dom";
 import Layer2 from "../assets/img/png/slider-bg-layer.webp";
 
 export const MainHeading = ({
@@ -30,7 +29,7 @@ export const Heading2 = ({
 }) => {
   return (
     <h2
-      className={`font-Helvetica font-normal xl:text-[52px] md:text-5xl sm:text-[46px] text-[38px] leading-[48px]  sm:leading-[60px] md:leading-[55px] xl:leading-[66px] capitalize text-black ${clsValue}`}
+      className={`font-Helvetica font-normal xl:text-[52px] lg:text-5xl md:text-[44px] sm:text-[46px] text-[38px] leading-[48px]  sm:leading-[60px] md:leading-[55px] lg:leading-[60px] xl:leading-[66px] capitalize text-black ${clsValue}`}
     >
       {Content1}{" "}
       <span className={`${clsValue2}`}>
@@ -255,7 +254,7 @@ export const TwitIcon = () => {
 };
 export const RightArrow = () => {
   return (
-    <>
+    <span>
       <svg
         width="41"
         height="14"
@@ -266,6 +265,7 @@ export const RightArrow = () => {
         <path
           d="M40.101 7.60104C40.433 7.2691 40.433 6.73091 40.101 6.39896L34.6917 0.989595C34.3597 0.65765 33.8215 0.65765 33.4896 0.989595C33.1576 1.32154 33.1576 1.85973 33.4896 2.19168L38.2979 7L33.4896 11.8083C33.1576 12.1403 33.1576 12.6785 33.4896 13.0104C33.8215 13.3424 34.3597 13.3424 34.6917 13.0104L40.101 7.60104ZM0.5 7.85L39.5 7.85L39.5 6.15L0.5 6.15L0.5 7.85Z"
           fill="url(#paint0_linear_2884_55)"
+          className="group-hover:fill-white"
         />
         <defs>
           <linearGradient
@@ -281,7 +281,7 @@ export const RightArrow = () => {
           </linearGradient>
         </defs>
       </svg>
-    </>
+    </span>
   );
 };
 export const Paragraphs = ({ clsValue, Content1 }) => {
@@ -312,14 +312,14 @@ export const SixCard = ({ class1, textContent, class2, commonBtn }) => {
   return (
     <div className="w-full h-fit sm:w-6/12 lg:w-4/12 max-sm:px-0 max-xl:px-3">
       <div
-        className={`lg:max-w-[380px] w-full flex xl:justify-center cursor-pointer justify-center sm:justify-start sm:text-start text-center  sm:min-h-[190px] lg:min-h-[230px] md:pt-12 sm:py-6 py-4 lg:pt-[63px]  duration-500 ease-linear group  ${class1}`}
+        className={`lg:max-w-[380px] w-full flex xl:justify-center cursor-pointer justify-center sm:justify-start sm:text-start text-center  sm:min-h-[190px] lg:min-h-[230px] md:pt-12 sm:py-6 py-4 lg:pt-[63px]  duration-500 ease-linear group/item  ${class1}`}
       >
         {textContent.map((text, index) =>
           text ? (
             <Paragraphs
               Content1={`${text}`}
               key={index}
-              clsValue={`opacity-70 xl:w-[283px] max-sm:w-[320px] group-hover:text-darkBlue capitalize duration-500 ease-linear ${class2}`}
+              clsValue={`opacity-70 xl:w-[283px] max-sm:w-[320px] group-hover/item:text-darkBlue capitalize duration-500 ease-linear ${class2}`}
             />
           ) : null
         )}
@@ -337,7 +337,7 @@ export const FourthCard = ({ textContent }) => {
             key={index}
             className="text-center max-w-[364px] min-h-[182px] w-full "
           >
-            <h5 className=" text-white font-semibold text-xl leading-8 font-Poppins sm:mb-4 mb-2 capitalize">
+            <h5 className=" text-white font-semibold sm:text-xl text-lg leading-7 sm:leading-8 font-Poppins sm:mb-4 mb-2 capitalize">
               {text.data1}
               <span className=" block"> {text.data2}</span>
             </h5>
