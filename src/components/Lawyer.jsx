@@ -1,5 +1,5 @@
 import React from "react";
-import LawyerPic from "../assets/img/png/Lawyer.webp";
+import LawyerPic from "../assets/img/png/men.webp";
 import { Heading2, Paragraphs, RightArrow } from "../assets/Icon";
 import Layer from "../assets/img/png/Lawyer-layer.webp";
 import Commonbtn from "../common/Commonbtn";

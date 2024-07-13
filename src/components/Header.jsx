@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import HeaderLayerBg from "../assets/img/png/Hero-image.webp";
-import HeaderEllips from "../assets/img/png/headerEllips.png";
+import HeaderEllips from "../assets/img/png/headerEllips.webp";
 import {
   CommonBookBtn,
   MainHeading,
@@ -49,9 +49,9 @@ const Header = () => {
               {/* column */}
               <div className="w-full xl:w-1/2 lg:w-5/12 flex lg:flex-col lg:justify-end justify-center xl:items-center lg:items-end lg:mt-0 mt-6 ">
                 <div className="max-w-[365px] flex justify-between w-full relative after:absolute after:left-0 after:h-[55px]  sm:after:h-[74px] pl-2 sm:pl-3 after:w-[2px] after:top-1/2 after:-translate-y-1/2 after:bg-purple ">
-                  <h5 className="mb-0 font-normal sm:text-base text-sm sm:leading-7 leading-5 font-Helvetica text-black lg:text-white uppercase w-full max-w-[138px]">
+                  <h4 className="mb-0 font-normal sm:text-base text-sm sm:leading-7 leading-5 font-Helvetica text-black lg:text-white uppercase w-full max-w-[138px]">
                     Die wichtigsten Aspekte einer Trennung:
-                  </h5>
+                  </h4>
                   <ul className="ps-0 mb-0 gap-[2px] flex flex-col">
                     <li className=" relative capitalize font-Poppins font-medium text-black lg:text-white sm:text-base text-sm sm:leading-6 leading-5 after:w-1 after:h-1 after:-left-3 after:bg-black lg:after:bg-white after:absolute after:rounded-full after:top-1/2 after:-translate-y-1/2">
                       physische Trennung

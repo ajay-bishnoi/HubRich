@@ -42,7 +42,7 @@ export const Heading2 = ({
 };
 export const PhoneIcon = () => {
   return (
-    <a href="tel:+914234709">
+    <a href="tel:+914234709" aria-label="tel-icon">
       <svg
         width="34"
         height="34"
@@ -130,7 +130,12 @@ export const NextArrow = ({ className, style, onClick }) => {
 };
 export const FbIcon = () => {
   return (
-    <a href="https://www.facebook.com/" target="_blank" className="social-icon">
+    <a
+      href="https://www.facebook.com/"
+      aria-label="facebook-icon"
+      target="_blank"
+      className="social-icon"
+    >
       <svg
         width="30"
         height="30"
@@ -157,7 +162,11 @@ export const FbIcon = () => {
 };
 export const MailIcon = () => {
   return (
-    <a href="mailto:MarcJoachimHubrich" className="social-icon">
+    <a
+      href="mailto:MarcJoachimHubrich"
+      aria-label="mail-icon"
+      className="social-icon"
+    >
       <svg
         width="30"
         height="31"
@@ -192,6 +201,7 @@ export const InstaIcon = () => {
     <a
       href="https://www.instagram.com/"
       target="_blank"
+      aria-label="instagram-icon"
       className="social-icon"
     >
       <svg
@@ -225,7 +235,12 @@ export const InstaIcon = () => {
 };
 export const TwitIcon = () => {
   return (
-    <a href="https://x.com" target="_blank" className="social-icon">
+    <a
+      href="https://x.com"
+      aria-label="twiter-icon"
+      target="_blank"
+      className="social-icon"
+    >
       <svg
         width="30"
         height="31"
@@ -353,10 +368,10 @@ export const FourthCard = ({ textContent }) => {
             key={index}
             className="text-center max-w-[364px] min-h-[182px] w-full "
           >
-            <h5 className=" text-white font-semibold sm:text-xl text-lg leading-7 sm:leading-8 font-Poppins sm:mb-4 mb-2 capitalize">
+            <h4 className=" text-white font-semibold sm:text-xl text-lg leading-7 sm:leading-8 font-Poppins sm:mb-4 mb-2 capitalize">
               {text.data1}
               <span className=" block"> {text.data2}</span>
-            </h5>
+            </h4>
             <Paragraphs clsValue="text-white" Content1={`${text.data3}`} />
           </div>
         ))}
