@@ -17,7 +17,7 @@ html {
     @apply font-Helvetica font-normal text-base leading-5 lg:text-white opacity-70 relative ease-linear duration-300 lg:hover:gradientText max-lg:gradientText lg:hover:bg-gradient-to-custom max-lg:bg-gradient-to-custom  after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-custom hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px] after:duration-300 after:ease-linear;
   }
   .nav-toggle-items {
-    @apply w-10 h-1 rounded-xl bg-gradient-to-custom block duration-300;
+    @apply w-10 h-1 rounded-xl bg-gradient-to-custom block duration-300 ease-linear;
   }
   .social-icon {
     @apply hover:scale-125 duration-500 ease-linear;
@@ -28,16 +28,13 @@ html {
   }
 }
 .cross span:nth-child(1) {
-  transition: all 300ms linear;
   transform: rotate(44deg) translateY(13px) translateX(2px);
 }
 .cross span:nth-child(2) {
   transform: translateX(-100%);
-  transition: all 300ms linear;
   opacity: 0;
 }
 .cross span:nth-child(3) {
-  transition: all 300ms linear;
   transform: rotate(-45deg) translateY(-14px) translateX(4px);
 }
 .btn_webkit::after {
@@ -53,7 +50,6 @@ html {
 .custom-dots li.slick-active button::before {
   opacity: 1 !important;
 }
-
 .slick-next:before {
   display: none !important;
 }
@@ -74,9 +70,6 @@ html {
   top: unset !important;
   display: flex !important;
 }
-.clint .slick-slide.slick-active.slick-current div > div {
-  background: unset !important;
-}
 .custom-dots2 li button::before {
   color: #003e92 !important;
   opacity: 10%;
@@ -86,8 +79,6 @@ html {
   opacity: 1 !important;
 }
 .custom-dots2 li {
-  height: fit-content !important;
-  width: fit-content !important;
   width: 12px !important;
   height: 12px !important;
 }

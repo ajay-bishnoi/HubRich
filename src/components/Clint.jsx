@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading2, Paragraphs } from "../assets/Icon";
+import { Heading2 } from "../assets/Icon";
 import Contentellips from "../assets/img/png/text-ellips-6.png";
 import Contentellips2 from "../assets/img/png/text-ellips-7.webp";
 import Qutation from "../assets/img/svg/qutation.svg";
