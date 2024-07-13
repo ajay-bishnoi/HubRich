@@ -6,8 +6,8 @@ import { BlueCardData3 } from "./Helper";
 const FaceSlider = () => {
   const settings3 = {
     dots: true,
-    infinite: false,
-    speed: 1200,
+    infinite: true,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
@@ -30,6 +30,17 @@ const FaceSlider = () => {
         </ul>
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: true,
+          pauseOnhover: true,
+          autoplay: true,
+          autoplaySpeed: 1600,
+        },
+      },
+    ],
   };
 
   return (

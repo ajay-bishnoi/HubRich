@@ -22,6 +22,11 @@ module.exports = {
         lg: "992px",
         xl: "1200px",
       },
+      boxShadow: {
+        custom: "0px 2px 48px 0px #00000014",
+        custom2: "0px 0px 20px 1px #ffffff",
+        custom3: "0px 0px 0px 4px #ffffff",
+      },
       colors: {
         gradient1: "linear-gradient(107.9deg, #0c5fd1 1.25%, #8703c5 93.71%)",
         purple: "#9800B0",

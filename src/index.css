@@ -14,7 +14,7 @@ html {
 }
 @layer components {
   .navitems {
-    @apply font-Helvetica font-normal text-base leading-5 text-white opacity-70 relative ease-linear duration-300 hover:gradientText  hover:bg-gradient-to-custom  after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-custom hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px] after:duration-300 after:ease-linear;
+    @apply font-Helvetica font-normal text-base leading-5 lg:text-white opacity-70 relative ease-linear duration-300 lg:hover:gradientText max-lg:gradientText lg:hover:bg-gradient-to-custom max-lg:bg-gradient-to-custom  after:absolute after:w-0 after:h-[2px] after:bg-gradient-to-custom hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px] after:duration-300 after:ease-linear;
   }
   .nav-toggle-items {
     @apply w-10 h-1 rounded-xl bg-gradient-to-custom block duration-300;
@@ -45,12 +45,6 @@ html {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
-/*  */
-
-.slick-slide.slick-active.slick-current div > div {
-  background: #003e92 !important;
-}
-
 .custom-dots li button::before {
   color: white !important;
   opacity: 30%;
@@ -59,13 +53,13 @@ html {
 .custom-dots li.slick-active button::before {
   opacity: 1 !important;
 }
+
 .slick-next:before {
   display: none !important;
 }
 .slick-prev:before {
   display: none !important;
 }
-
 .slick-prev {
   left: -41px !important;
   bottom: 23px !important;
@@ -79,4 +73,29 @@ html {
 .slick-next {
   top: unset !important;
   display: flex !important;
+}
+.clint .slick-slide.slick-active.slick-current div > div {
+  background: unset !important;
+}
+.custom-dots2 li button::before {
+  color: #003e92 !important;
+  opacity: 10%;
+  font-size: 12px !important;
+}
+.custom-dots2 li.slick-active button::before {
+  opacity: 1 !important;
+}
+.custom-dots2 li {
+  height: fit-content !important;
+  width: fit-content !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+@media (max-width: 576px) {
+  .clint .slick-dots {
+    bottom: -25px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: unset !important;
+  }
 }

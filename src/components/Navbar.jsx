@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/img/svg/Logo.svg";
+import { Link, NavLink } from "react-router-dom";
+import { NavbarItems } from "../common/Helper";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1200) {
+      if (window.innerWidth < 992) {
         document.body.style.overflow = show ? "visible" : "hidden";
       } else {
         document.body.style.overflow = "";
@@ -36,29 +38,25 @@ const Navbar = () => {
             <img src={Logo} alt="page-logo" />
           </a>
           <ul
-            className={`ps-0 mb-0 flex flex-col lg:flex-row items-center gap-8 lg:gap-10 max-lg:fixed max-lg:justify-center top-0 max-lg:-left-full max-lg:z-[90] max-lg:h-screen max-lg:w-full max-lg:duration-300 max-lg:bg-black ${
+            className={`ps-0 mb-0 flex flex-col lg:flex-row items-center gap-8 lg:gap-10 max-lg:fixed max-lg:justify-center top-0 max-lg:-left-full max-lg:z-[90] max-lg:h-screen max-lg:w-full max-lg:duration-300 max-lg:bg-white ${
               show ? "" : " !start-0"
             }`}
           >
-            <li>
-              <a onClick={handleClick} href="#Benifits" className="navitems">
-                Benifits
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={handleClick}
-                href="#Testimonials"
-                className="navitems"
-              >
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <button className=" font-medium text-base leading-6 font-Inter capitalize px-7 py-4 bg-gradient-to-custom text-white rounded-none outline-none border-2 transition-custom duration-300 ease-linear relative border-gradient hover:bg-gradient1 hover:text-transparent hover:bg-clip-text hover:scale-95">
-                Book consultation now
-              </button>
-            </li>
+            {NavbarItems.map((item, index) => (
+              <li key={index}>
+                {item.type === "link" ? (
+                  <a
+                    onClick={handleClick}
+                    href={item.href}
+                    className={item.className}
+                  >
+                    {item.text}
+                  </a>
+                ) : (
+                  <button className={item.className}>{item.text}</button>
+                )}
+              </li>
+            ))}
           </ul>
           {/* <!-- menu btn --> */}
           <div

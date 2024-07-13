@@ -1,4 +1,5 @@
 import Layer2 from "../assets/img/png/slider-bg-layer.webp";
+import ProfilePic from "../assets/img/svg/girl-profile.svg";
 
 export const MainHeading = ({
   Content1,
@@ -328,6 +329,21 @@ export const SixCard = ({ class1, textContent, class2, commonBtn }) => {
     </div>
   );
 };
+export const RequestCard = ({ class1, textContent, class2 }) => {
+  return (
+    <div
+      className={`min-w-[240px] lg:max-w-[250px] w-full flex justify-center min-h-[200px] pt-[61px] ${class1} lg:backdrop-blur-[2px] opacity-1 bg-lightBlue3 duration-500 ease-linear hover:bg-darkBlue`}
+    >
+      {textContent.map((text, index) => (
+        <Paragraphs
+          Content1={`${text}`}
+          key={index}
+          clsValue={`!text-white w-[173px] ${class2}`}
+        />
+      ))}
+    </div>
+  );
+};
 export const FourthCard = ({ textContent }) => {
   return (
     <>
@@ -353,19 +369,23 @@ export const FourthCard = ({ textContent }) => {
     </>
   );
 };
-//
-export const RequestCard = ({ class1, textContent, class2 }) => {
+export const UpArrow = () => {
   return (
-    <div
-      className={`min-w-[240px] lg:max-w-[250px] w-full flex justify-center min-h-[200px] pt-[61px] ${class1} lg:backdrop-blur-[2px] opacity-1 bg-lightBlue3 duration-500 ease-linear hover:bg-darkBlue`}
+    <svg
+      width="20"
+      height="10"
+      viewBox="0 0 20 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      {textContent.map((text, index) => (
-        <Paragraphs
-          Content1={`${text}`}
-          key={index}
-          clsValue={`!text-white w-[173px] ${class2}`}
-        />
-      ))}
-    </div>
+      <path
+        d="M2 8.12305L10 2.12305L18 8.12305"
+        stroke="white"
+        stroke-width="2.62342"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
+//

@@ -1,5 +1,25 @@
 import Commonbtn from "./Commonbtn";
 
+export const NavbarItems = [
+  {
+    type: "link",
+    href: "#Benifits",
+    text: "Benifits",
+    className: "navitems",
+  },
+  {
+    type: "link",
+    href: "#Testimonials",
+    text: "Testimonials",
+    className: "navitems",
+  },
+  {
+    type: "button",
+    text: "Book consultation now",
+    className:
+      "font-medium text-base leading-6 font-Inter capitalize px-7 py-4 bg-gradient-to-custom text-white rounded-none outline-none border-2 transition-custom duration-300 ease-linear relative border-gradient hover:bg-gradient1 hover:text-transparent hover:bg-clip-text hover:scale-95",
+  },
+];
 export const BlueCardData1 = [
   {
     title: "Your self-esteem is in the basement.",
@@ -109,5 +129,35 @@ export const BlueCardData5 = [
   {
     title: "How do I rebuild my self-esteem?",
     // style: " mt-6 lg:mt-0",
+  },
+];
+//
+export const SlideData = [
+  {
+    title:
+      "Nec pellentesque aliquet diam eget sed mi ornare vulputate duis. Posuere id habitasse quis ac ac. Pellentesque eget sed ut tincidunt cras. Ipsum nec placerat vitae orci. Accumsan amet commodo montes, aenean velit gravida tristique montes. Porttitor velit cras venenatis, amet curabitur ultricies ac dictum. ",
+    name: "Marrie James-CEO",
+    company: "Limana Enterprises, CA",
+    clsValueTitle: "text-center md:mb-6 mb-5 opacity-70",
+    clsValueName: "!font-medium mb-[2px] text-center",
+    clsValueCompany: "text-center opacity-70",
+  },
+  {
+    title:
+      "Elementum risus cursus vehicula consectetur sapien ut tempor, venenatis turpis. Sed mauris enim.",
+    name: "Ralph Edwards-CEO ",
+    company: "Limana Enterprises, CA",
+    clsValueTitle: "text-center md:mb-[19px] mb-[16px] opacity-70",
+    clsValueName: "!font-medium mb-[2px] text-center",
+    clsValueCompany: "text-center opacity-70",
+  },
+  {
+    title:
+      "Elementum risus cursus vehicula consectetur sapien ut tempor, venenatis turpis. Sed mauris enim.",
+    name: "Darrell Steward-Head",
+    company: "Limana Enterprises, CA",
+    clsValueTitle: "text-center md:mb-[19px] mb-[16px] opacity-70",
+    clsValueName: "!font-medium mb-[2px] text-center",
+    clsValueCompany: "text-center opacity-70",
   },
 ];
