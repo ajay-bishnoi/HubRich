@@ -41,7 +41,7 @@ const Lawyer = () => {
               />
               <Commonbtn
                 content="Learn more about the agency"
-                class1="rounded-[59px] after:rounded-[59px] !py-6 !px-8 max-w-[350px] !justify-between"
+                class1="rounded-[59px] after:rounded-[59px] !py-6 !px-8 !max-w-[350px] !justify-between"
                 class2="hidden"
                 content2={<RightArrow />}
               />
