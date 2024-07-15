@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="relative w-full max-lg:flex sm:flex-row sm:justify-between items-center sm:gap-0 gap-5 flex-col">
           <div className=" flex justify-center lg:h-[160px] items-end">
             <Paragraphs
-              Content1="(c)2022 MARC JOACHIM HUBRICH All Rights Reserved"
+              Content1="(c)2024 MARC JOACHIM HUBRICH All Rights Reserved"
               clsValue=" text-white w-[264px] text-center "
             />
           </div>

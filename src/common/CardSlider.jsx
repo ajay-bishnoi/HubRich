@@ -4,7 +4,7 @@ import { BlueCard } from "../assets/Icon";
 import { BlueCardData1 } from "./Helper";
 
 const CardSlider = () => {
-  const settings = {
+  const cardslider = {
     dots: false,
     infinite: true,
     speed: 940,
@@ -36,7 +36,7 @@ const CardSlider = () => {
   };
   return (
     <>
-      <Slider {...settings} className="w-full max-w-[1000px]">
+      <Slider {...cardslider} className="w-full max-w-[1000px]">
         {BlueCardData1.map((data, index) => (
           <BlueCard
             key={index}

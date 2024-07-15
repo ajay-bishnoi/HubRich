@@ -1,6 +1,13 @@
 import React from "react";
 import Flower from "../assets/img/png/flower.webp";
-import { Heading2, MainHeading, Paragraphs, SixCard } from "../assets/Icon";
+import {
+  Heading2,
+  MainHeading,
+  Paragraphs,
+  SixCard,
+  TextEllips,
+  TextEllips2,
+} from "../assets/Icon";
 import { GetCard } from "../common/Helper";
 import ContentEllips from "../assets/img/png/text-ellips-2.webp";
 import ContentEllips2 from "../assets/img/png/text-ellips-3.png";
@@ -11,7 +18,7 @@ const YouGet = () => {
   return (
     <div className=" xl:p-[122px_0px_124px_0px] lg:py-[120px] md:py-20 sm:py-[70px] py-[60px] relative z-20 2xl:mx-auto 2xl:max-w-[1440px] ">
       <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] relative">
-        <div className=" flex flex-col lg:flex-row items-center gap-3 ">
+        <div className=" flex flex-col lg:flex-row items-center gap-3  ">
           <div className="  max-lg:flex lg:flex-col sm:gap-4 gap-2 lg:gap-0 items-center sm:flex-row flex-wrap justify-center">
             <Heading2 Content1="what you" />
             <MainHeading
@@ -37,7 +44,7 @@ const YouGet = () => {
           questions in particular:
         </h4>
         {/* row */}
-        <div className="flex flex-row flex-wrap w-full ">
+        <div className="flex flex-row flex-wrap w-full rot ">
           {GetCard.map((data, index) => (
             <SixCard
               textContent={[data.title]}
@@ -49,15 +56,26 @@ const YouGet = () => {
           ))}
         </div>
         {/* ellips */}
-        <img
-          src={ContentEllips}
-          alt="ContentEllips"
-          className="absolute -z-30 pointer-events-none hidden md:block lg:h-[328px] h-[250px] right-0 -top-[16%] lg:-top-[31%] "
+        <TextEllips2
+          setposition="right-0 lg:-top-[30%] md:-top-[16%] hidden md:block"
+          setposition2="-left-[23px] bottom-0 flex-col-reverse"
+          setposition3="-left-[55px] -bottom-[7px]"
+          SrPosition="rotate-90"
+          content="MJH"
+          content2=""
+          SrNumber="02"
+          lineClass="lg:h-[269px] h-[180px] w-[2px] "
+          line2class="min-w-[26px] h-[2px]"
         />
-        <img
-          src={ContentEllips2}
-          alt="ContentEllips"
-          className="absolute -z-30 pointer-events-none hidden md:block lg:h-[588px] h-[500px] left-0 -bottom-[4%] lg:-bottom-[14%] "
+        <TextEllips
+          setposition="left-[9px] -bottom-[6%] xl:-bottom-[12%]"
+          setposition2="left-[0px] bottom-0"
+          SrPosition="-rotate-90"
+          content=""
+          content2="Goal"
+          SrNumber="03"
+          lineClass="h-[581px] w-[2px] "
+          line2class="w-[26px] h-[2px]"
         />
       </div>
       {/* ellips */}

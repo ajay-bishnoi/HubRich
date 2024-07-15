@@ -30,7 +30,7 @@ export const Heading2 = ({
 }) => {
   return (
     <h2
-      className={`font-Helvetica font-normal xl:text-[52px] lg:text-5xl md:text-[44px] sm:text-[46px] text-[38px] leading-[48px]  sm:leading-[60px] md:leading-[55px] lg:leading-[60px] xl:leading-[66px] capitalize text-black ${clsValue}`}
+      className={`font-Helvetica font-normal xl:text-[52px] lg:text-5xl md:text-[44px] sm:text-[42px] text-[38px] leading-[48px]  sm:leading-[56px] md:leading-[55px] lg:leading-[60px] xl:leading-[66px] capitalize text-black ${clsValue}`}
     >
       {Content1}{" "}
       <span className={`${clsValue2}`}>
@@ -328,7 +328,7 @@ export const SixCard = ({ class1, textContent, class2, commonBtn }) => {
   return (
     <div className="w-full h-fit sm:w-6/12 lg:w-4/12 max-sm:px-0 max-xl:px-3 2xl:flex 2xl:justify-center">
       <div
-        className={`lg:max-w-[380px] 2xl:max-w-full w-full flex xl:justify-center cursor-pointer justify-center sm:justify-start sm:text-start text-center  sm:min-h-[190px] lg:min-h-[230px] md:pt-12 sm:py-6 py-4 lg:pt-[63px]  duration-500 ease-linear group/item  ${class1}`}
+        className={`lg:max-w-[380px] 2xl:max-w-full w-full flex xl:justify-center justify-center sm:justify-start sm:text-start text-center  sm:min-h-[190px] lg:min-h-[230px] md:pt-12 sm:py-6 py-4 lg:pt-[63px]  duration-500 ease-linear group/item  ${class1}`}
       >
         {textContent.map((text, index) =>
           text ? (
@@ -368,7 +368,7 @@ export const FourthCard = ({ textContent }) => {
             key={index}
             className="text-center max-w-[364px] min-h-[182px] w-full "
           >
-            <h4 className=" text-white font-semibold sm:text-xl text-lg leading-7 sm:leading-8 font-Poppins sm:mb-4 mb-2 capitalize">
+            <h4 className=" text-white font-medium sm:text-xl text-lg leading-7 sm:leading-8 font-Poppins sm:mb-4 mb-2 capitalize">
               {text.data1}
               <span className=" block"> {text.data2}</span>
             </h4>
@@ -404,3 +404,75 @@ export const UpArrow = () => {
   );
 };
 //
+export const TextEllips = ({
+  setposition,
+  setposition2,
+  lineClass,
+  line2class,
+  SrNumber,
+  content,
+  content2,
+  SrPosition,
+}) => {
+  return (
+    <div className={`absolute  ${setposition} -z-20 pointer-events-none`}>
+      <div class=" relative">
+        <div className=" flex flex-col gap-[20px] items-center">
+          <p className=" font-Poppins font-light text-xl lh-[34px]  tracking-[0.045em] text-black -rotate-90">
+            {content}
+          </p>
+          <span className={` bg-orange ${lineClass}`}></span>
+        </div>
+        <div className={`flex items-end absolute  ${setposition2}`}>
+          <span className={`bg-orange  ${line2class}`}></span>
+          <h4
+            className={`font-neue font-normal text-[40px] leading-[51px] text-black  ${SrPosition}`}
+          >
+            {SrNumber}
+          </h4>
+          <p className=" uppercase text-nowrap font-Helvetica font-normal text-2xl leading-[30px] text-black">
+            {content2}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+//
+export const TextEllips2 = ({
+  setposition,
+  setposition2,
+  setposition3,
+  lineClass,
+  line2class,
+  SrNumber,
+  content,
+  content2,
+  SrPosition,
+}) => {
+  return (
+    <div className={`absolute  ${setposition} -z-20 pointer-events-none`}>
+      <div class=" relative">
+        <div className=" flex flex-col gap-[20px] items-center">
+          <p className=" font-Poppins font-light text-xl lh-[34px]  tracking-[0.045em] text-black -rotate-90">
+            {content}
+          </p>
+          <span className={`bg-orange ${lineClass}`}></span>
+        </div>
+        <div className={`flex items-end absolute -left-[5px]  ${setposition2}`}>
+          <span className={`bg-orange   ${line2class}`}></span>
+        </div>
+        <div className={`flex absolute   items-end  ${setposition3}`}>
+          <p className=" uppercase text-nowrap font-Helvetica font-normal text-2xl leading-[30px] text-black">
+            {content2}
+          </p>
+          <h4
+            className={`font-neue font-normal text-[40px] leading-[51px] text-black  ${SrPosition}`}
+          >
+            {SrNumber}
+          </h4>
+        </div>
+      </div>
+    </div>
+  );
+};

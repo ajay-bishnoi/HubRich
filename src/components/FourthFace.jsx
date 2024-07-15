@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading2, Paragraphs } from "../assets/Icon";
+import { Heading2, Paragraphs, TextEllips2 } from "../assets/Icon";
 import Commonbtn from "../common/Commonbtn";
 import FaceSlider from "../common/FaceSlider";
 import ContentEllips from "../assets/img/png/text-ellips-4.png";
@@ -26,22 +26,28 @@ const FourthFace = () => {
               />
               <Commonbtn
                 content="Book a non-binding initial consultation now"
-                class1="rounded-[63px] after:rounded-[63px] max-lg:mx-auto"
+                class1="rounded-[63px] after:rounded-[63px] max-lg:mx-auto !justify-start"
               />
             </div>
           </div>
           {/* column */}
-          <div className=" w-full lg:w-7/12 flex lg:justify-end justify-center relative z-0 lg:pl-6 mt-8 sm:mt-12 lg:mt-0">
+          <div className=" w-full lg:w-7/12 flex lg:justify-end justify-center  relative z-0 lg:pl-6 mt-8 sm:mt-12 lg:mt-0">
             <div className="w-full max-w-[608px] 2xl:max-w-[700px]">
               <FaceSlider />
             </div>
           </div>
         </div>
         {/* ellips */}
-        <img
-          src={ContentEllips}
-          alt="ContentEllips"
-          className=" absolute -z-20 pointer-events-none right-0 -top-[62%] h-[265px] hidden xl:block"
+        <TextEllips2
+          setposition="-right-[4px] lg:-top-[60%] md:-top-[16%] hidden xl:block"
+          setposition2="-left-[23px] bottom-0 flex-col-reverse"
+          setposition3="-left-[160px] -bottom-[7px]"
+          SrPosition="rotate-90"
+          content="MJH"
+          content2="analysis"
+          SrNumber="04"
+          lineClass="lg:h-[201px] h-[180px] w-[2px] "
+          line2class="min-w-[26px] h-[2px]"
         />
       </div>
     </div>

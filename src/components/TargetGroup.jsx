@@ -50,7 +50,7 @@ const TargetGroup = () => {
             </div>
           </div>
           {/*  */}
-          <div className=" absolute lg:-bottom-[31px]  lg:right-7 right-0 lg:inline hidden max-w-[338px] min-h-[272px] py-[65px] px-6 backdrop-blur-sm bg-[#003E92B2]">
+          <div className=" absolute lg:-bottom-[31px] lg:right-9 right-0 lg:inline hidden max-w-[338px] min-h-[272px] py-[65px] px-6 backdrop-blur-sm bg-[#003E92B2]">
             <Paragraphs
               clsValue="text-white"
               Content1="To understand how to let go of your partner, you need a detailed step-by-step action plan, which you will receive from me in a 1:1 coaching session."

@@ -1,6 +1,6 @@
 import React from "react";
 import LawyerPic from "../assets/img/png/men.webp";
-import { Heading2, Paragraphs, RightArrow } from "../assets/Icon";
+import { Heading2, Paragraphs, RightArrow, TextEllips } from "../assets/Icon";
 import Layer from "../assets/img/png/Lawyer-layer.webp";
 import Commonbtn from "../common/Commonbtn";
 import ContentEllips from "../assets/img/png/text-ellips-5.png";
@@ -41,7 +41,7 @@ const Lawyer = () => {
               />
               <Commonbtn
                 content="Learn more about the agency"
-                class1="rounded-[59px] after:rounded-[59px] !py-6 !px-8 !max-w-[350px] !justify-between"
+                class1="rounded-[59px] after:rounded-[59px] !py-[16px] !px-8 !max-w-[350px] !justify-between !items-center"
                 class2="hidden"
                 content2={<RightArrow />}
               />
@@ -51,13 +51,18 @@ const Lawyer = () => {
         <img
           src={Layer}
           alt="bg-layer"
-          className=" max-2xl:hidden absolute 2xl:-bottom-[4%] xl:bottom-[18%] lg:bottom-[13%] pointer-events-none bottom-[0%] right-0 max-w-[738px] -z-10 "
+          className=" max-2xl:hidden absolute  2xl:-bottom-[4%] xl:bottom-[18%] lg:bottom-[13%] pointer-events-none bottom-[0%] right-0 max-w-[738px] -z-10 "
         />
         {/* ellips */}
-        <img
-          src={ContentEllips}
-          alt="ContentEllips"
-          className="absolute -z-20 pointer-events-none hidden xl:block left-0 -top-[39%] 2xl:-top-[34%] h-[174px]"
+        <TextEllips
+          setposition="left-[20px] -top-[26%] xl:-top-[43%] 2xl:-top-[36%] -z-20 pointer-events-none hidden lg:block"
+          setposition2="left-[0px] bottom-0"
+          SrPosition="-rotate-90"
+          content=""
+          content2="about"
+          SrNumber="05"
+          lineClass="h-[90px] xl:h-[167px] w-[2px] "
+          line2class="w-[26px] h-[2px]"
         />
       </div>
       {/* layer */}

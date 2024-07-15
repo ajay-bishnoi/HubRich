@@ -31,7 +31,7 @@ const Request = () => {
               clsValue3="text-black"
             />
             <div className=" flex items-center gap-3 xl:max-w-[412px] md:max-w-[330px] text-center sm:text-start">
-              <span className=" xl:h-[120px] md:h-[140px] h-[100px] w-1 bg-purple md:mt-1"></span>
+              <span className=" xl:h-[120px] md:h-[140px] h-[100px] w-[6px] bg-purple md:mt-1"></span>
               <Paragraphs
                 clsValue="!font-Poppins text-center md:text-start"
                 Content1="Click on the button below, choose an appointment and answer the questions truthfully. One of our strategy consultants will then contact you and conduct your free consultation. We can advise you on the following topics: "

@@ -28,7 +28,7 @@ const BacktoTop = () => {
         onClick={scrollToTop}
         className="fixed z-30 bottom-5 right-3 sm:right-5"
       >
-        <button className="rounded-full hover:shadow-custom2 group z-50 w-[40px] sm:w-[50px] h-[40px] sm:h-[50px] bg-gradient-to-custom flex flex-col items-center justify-center shadow-custom3 overflow-hidden">
+        <button className="rounded-full hover:shadow-custom2 group z-50 w-[40px] sm:w-[50px] h-[40px] sm:h-[50px] bg-gradient-to-custom flex flex-col items-center justify-center duration-300 shadow-custom3 overflow-hidden">
           <UpArrow />
           <UpArrow />
         </button>

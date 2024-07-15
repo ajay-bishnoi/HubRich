@@ -9,8 +9,8 @@ const YourFault = () => {
       {/* container */}
       <div className="container lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] relative z-10">
         {/* content */}
-        <div className="max-w-[806px] w-full md::mb-12 sm:mb-8 mb-6 md:mb-10 lg:mb-12 xl:mb-[58px] mx-auto md:flex-row flex-col items-center flex justify-between md:gap-10 sm:gap-5 gap-4 lg:gap-[61px]">
-          <div>
+        <div className=" max-xl:max-w-[806px] w-full sm:mb-8 mb-6 md:mb-10 lg:mb-12 xl:mb-[58px] mx-auto md:flex-row flex-col items-center flex justify-center xl:justify-start md:gap-10 sm:gap-5 gap-4 lg:gap-[61px]">
+          <div className=" xl:pl-[224px]">
             <MainHeading
               Content1="IT'S NOT"
               clsValue="md:text-start text-center max-sm:!text-[44px] max-sm:!leading-[50px] max-xl:!text-[52px] max-md:!leading-[55px] max-xl:!leading-[65px]"
@@ -37,7 +37,7 @@ const YourFault = () => {
       <img
         src={FaultEllips}
         alt="Ellips"
-        className=" absolute pointer-events-none hidden md:block -z-20 right-0 lg:-bottom-[45px] bottom-2 lg:h-[370px] xl:h-[400px] h-[300px] "
+        className=" absolute pointer-events-none hidden md:block -z-20 right-0 lg:-bottom-4 xl:-bottom-[45px] bottom-2 lg:h-[322px] xl:h-[400px] h-[300px] "
       />
     </div>
   );

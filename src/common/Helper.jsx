@@ -17,7 +17,7 @@ export const NavbarItems = [
     type: "button",
     text: "Book consultation now",
     className:
-      "font-medium text-base leading-6 font-Inter capitalize px-7 py-4 bg-gradient-to-custom text-white rounded-none outline-none border-2 transition-custom duration-300 ease-linear relative border-gradient hover:bg-gradient1 hover:text-transparent hover:bg-clip-text hover:scale-95",
+      "font-medium text-base leading-6 font-Inter capitalize px-[26.3px] py-[14px] bg-gradient-to-custom text-white rounded-none outline-none border-2 transition-custom duration-300 ease-linear relative border-gradient hover:bg-gradient1 hover:text-transparent hover:bg-clip-text hover:scale-95",
   },
 ];
 export const BlueCardData1 = [
@@ -87,7 +87,7 @@ export const BlueCardData3 = [
     title: "1st Phase",
     title2: `"The not-wanting-to-be-true"`,
     title3:
-      "Constant stress and enormous pressure as a founder is not normal, but the result of a wrong perspective on productive work. Learn how to get the maximum performance out of yourself without stress.",
+      "This phase is characterized by denial and ignoring the final separation.",
   },
   {
     title: "2nd Phase",
@@ -100,6 +100,12 @@ export const BlueCardData3 = [
     title2: `"CEO Mindset"`,
     title3:
       "Constant stress and enormous pressure as a founder is not normal, but the result of a wrong perspective on productive work. Learn how to get the maximum performance out of yourself without stress.",
+  },
+  {
+    title: "4th Phase",
+    title2: `"Sales Mindset"`,
+    title3:
+      "Nervousness and feelings of guilt in the sales talk are the reason for poor performance, learn to put them aside and calmly convince your customers.",
   },
 ];
 //
@@ -138,7 +144,7 @@ export const SlideData = [
       "Nec pellentesque aliquet diam eget sed mi ornare vulputate duis. Posuere id habitasse quis ac ac. Pellentesque eget sed ut tincidunt cras. Ipsum nec placerat vitae orci. Accumsan amet commodo montes, aenean velit gravida tristique montes. Porttitor velit cras venenatis, amet curabitur ultricies ac dictum. ",
     name: "Marrie James-CEO",
     company: "Limana Enterprises, CA",
-    clsValueTitle: "text-center md:mb-6 mb-5 opacity-70",
+    clsValueTitle: "text-center md:mb-4 mb-[14px] opacity-70",
     clsValueName: "!font-medium mb-[2px] text-center",
     clsValueCompany: "text-center opacity-70",
   },

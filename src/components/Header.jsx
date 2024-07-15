@@ -7,6 +7,7 @@ import {
   MainHeading,
   Paragraphs,
   PhoneIcon,
+  TextEllips,
 } from "../assets/Icon";
 import Commonbtn from "../common/Commonbtn";
 import ContentEllips from "../assets/img/png/text-ellips.webp";
@@ -17,14 +18,14 @@ const Header = () => {
       <header className="lg:bg-header-bg 2xl:mx-auto 2xl:max-w-[1440px] 2xl:bg-none h-full w-full bg-cover bg-no-repeat lg:bg-center bg-left z-30 relative">
         <Navbar />
         {/* hero-section */}
-        <div className="lg:pt-40 md:pt-[120px] sm:pt-20 py-[60px] sm:pb-11 2xl:pb-20">
+        <div className="lg:pt-[165px] md:pt-[120px] sm:pt-20 py-[60px] sm:pb-11 2xl:pb-20">
           {/* container */}
           <div className="container flex items-center justify-between lg:max-w-[1016px] xl:max-w-[1188px] 2xl:max-w-[1344px] relative z-20">
             {/* row */}
             <div className="flex flex-row flex-wrap w-full lg:h-[522px] justify-between">
               {/* column */}
               <div className="w-full xl:w-1/2 lg:w-7/12">
-                <div className=" w-full lg:max-w-[517px] text-center lg:text-start ">
+                <div className=" w-full lg:max-w-[440px] xl:max-w-[517px] text-center lg:text-start ">
                   <h4 className=" font-normal font-neue leading-6  text-lg text-orange mb-0">
                     Marc Joachim Hubrich
                   </h4>
@@ -64,10 +65,16 @@ const Header = () => {
               </div>
             </div>
             {/* ellips */}
-            <img
-              src={ContentEllips}
-              alt="ContentEllips"
-              className="absolute -z-30 pointer-events-none hidden md:block xl:-bottom-[45%] lg:-bottom-1/4 -bottom-[20%] 2xl:-bottom-1/2 left-0 xl:h-[330px] h-[220px]"
+
+            <TextEllips
+              setposition="left-0 -bottom-[22%] lg:-bottom-[30%] xl:-bottom-[43%] 2xl:-bottom-1/2 hidden md:block"
+              setposition2="left-[21px] bottom-0"
+              SrPosition="-rotate-90"
+              content="MJH"
+              content2="fault"
+              SrNumber="01"
+              lineClass="lg:h-[200px] h-[170px] xl:h-[269px] 2xl:h-[300px] w-[2px] "
+              line2class="w-[26px] h-[2px]"
             />
           </div>
         </div>
