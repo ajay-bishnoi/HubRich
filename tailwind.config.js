@@ -26,6 +26,7 @@ module.exports = {
         custom: "0px 2px 48px 0px #00000014",
         custom2: "0px 0px 20px 1px #ffffff",
         custom3: "0px 0px 0px 4px #ffffff",
+        "5xl": "0px 0px 15px 0px #0C5FD1 inset",
       },
       colors: {
         gradient1: "linear-gradient(107.9deg, #0c5fd1 1.25%, #8703c5 93.71%)",
